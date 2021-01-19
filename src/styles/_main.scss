@@ -1,0 +1,136 @@
+.main {
+    &__choices {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        list-style-type: none;
+        margin: 0.2rem;
+    }
+
+    &__choice {
+        border: 2px solid orange;
+        padding: 1rem;
+
+        &:hover {
+            background: orange;
+            color: white;
+        }
+    }
+
+    &__icon {
+        color: orange;
+        font-size: 1.2rem;
+    }
+
+    &__option {
+        margin-left: 1rem;
+    }
+
+    &__input {
+       display: none;
+    }
+
+    label {
+        display: block;
+        height: 100%;
+        width: 100%;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .fa-circle {
+        color: orange;
+    }
+}
+
+//responsive
+@media (min-height: 700px) {
+    .main {
+        &__choices {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 1rem;
+            list-style-type: none;
+            margin: 0.2rem;
+        }
+    
+        &__choice {
+            border: 2px solid orange;
+            padding: 1.2rem;
+        }
+    
+        &__icon {
+            color: orange;
+            font-size: 1.2rem;
+        }
+    
+        &__option {
+            margin-left: 1rem;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media (min-height: 1000px) {
+    .main {
+        &__choices {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem;
+            list-style-type: none;
+            margin: 0.2rem;
+        }
+    
+        &__choice {
+            border: 2px solid orange;
+            padding: 3rem;
+        }
+    
+        &__icon {
+            color: orange;
+            font-size: 1.6rem;
+        }
+    
+        &__option {
+            margin-left: 1.2rem;
+            font-size: 2rem;
+        }
+
+        .fa-circle {
+            font-size: 2rem;
+        }
+
+        .fa-check-circle {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .main {
+        &__choices {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem;
+            list-style-type: none;
+            margin: 0.5rem;
+        }
+    
+        &__choice {
+            border: 2px solid orange;
+            padding: 4rem;
+        }
+    
+        &__icon {
+            color: orange;
+            font-size: 3rem;
+        }
+    
+        &__option {
+            margin-left: 1.2rem;
+            font-size: 2.5rem;
+        }
+        
+    }
+}

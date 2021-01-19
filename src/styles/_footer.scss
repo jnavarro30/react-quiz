@@ -1,0 +1,52 @@
+.footer {
+    display: grid;
+    width: 98%;
+    margin: 1rem auto;
+    grid-gap: 0.2rem;
+
+    &__button {
+        padding: 1rem;
+        background: white;
+
+        &:hover {
+            cursor: pointer;
+            background: black;
+            color: white;
+            border: 2px solid white;
+            outline: none;
+        }
+    }
+}
+
+// responsive
+@media (min-height: 700px) {
+    .footer {
+        &__button {
+            padding: 1.2rem;
+            font-size: 1rem;
+            background: white;
+        }
+    }
+}
+
+@media (min-height: 1000px) {
+    .footer {
+        margin: 3rem auto;
+
+        &__button {
+            padding: 1.8rem;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media (min-height: 1000px) {
+    .footer {
+        margin: 3rem auto;
+
+        &__button {
+            padding: 2rem;
+            font-size: 2rem;
+        }
+    }
+}

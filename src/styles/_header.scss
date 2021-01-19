@@ -1,0 +1,131 @@
+.header {
+    text-align: center;
+    * {
+        margin: 1rem;
+    }
+    &__question {
+        font-size: 2rem;
+    }
+
+    &__tracker {
+        font-size: 1.3rem;
+    }
+
+    &__progress {
+        background: black;
+        width: 30%;
+        height: 15px;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+
+    &__bar {
+        background: orange;
+        width: 50%;
+        height: 100%;
+        margin: 0;
+    }
+
+    &__tagline {
+        font-size: 1.6rem;
+        color: gray;
+    }
+}
+
+// responsive 
+
+@media (min-height: 700px) {
+    .header {
+        &__question {
+            font-size: 2.5rem;
+        }
+
+        &__tracker {
+            font-size: 1.3rem;
+        }
+    
+        &__progress {
+            background: black;
+            width: 30%;
+            height: 15px;
+            margin: 0 auto;
+            margin-top: 1rem;
+        }
+    
+        &__bar {
+            background: orange;
+            width: 50%;
+            height: 100%;
+            margin: 0;
+        }
+
+        &__tagline {
+            font-size: 1.6rem;
+            color: gray;
+        }
+    }
+}
+
+@media (min-height: 1000px) {
+    .header {
+        &__question {
+            font-size: 3.4rem;
+        }
+
+        &__tracker {
+            font-size: 1.6rem;
+        }
+    
+        &__progress {
+            background: black;
+            width: 30%;
+            height: 20px;
+            margin: 0 auto;
+            margin-top: 1rem;
+        }
+    
+        &__bar {
+            background: orange;
+            width: 50%;
+            height: 100%;
+            margin: 0;
+        }
+
+        &__tagline {
+            font-size: 1.8rem;
+            color: gray;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .header {
+        &__question {
+            font-size: 4rem;
+        }
+
+        &__tracker {
+            font-size: 2.4rem;
+        }
+    
+        &__progress {
+            background: black;
+            width: 30%;
+            height: 25px;
+            margin: 0 auto;
+            margin-top: 1rem;
+        }
+    
+        &__bar {
+            background: orange;
+            width: 50%;
+            height: 100%;
+            margin: 0;
+        }
+
+        &__tagline {
+            font-size: 2.4rem;
+            color: gray;
+        }
+    }
+}
